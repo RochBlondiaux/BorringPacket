@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.rochblondiaux</groupId>
+    <artifactId>borringpackets</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>BorringPackets</name>
+    <description>A simple packets api make with Netty to avoid time wasting.</description>
+
+    <developers>
+        <developer>
+            <id>Sharkz</id>
+            <name>Roch Blondiaux</name>
+            <url>www.roch-blondiaux.com</url>
+            <organization>Nesty Services</organization>
+            <email>contact@roch-blondiaux.com</email>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>commons</module>
+        <module>client</module>
+        <module>server</module>
+    </modules>
+
+    <dependencies>
+        <!-- Netty -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.68.Final</version>
+        </dependency>
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
