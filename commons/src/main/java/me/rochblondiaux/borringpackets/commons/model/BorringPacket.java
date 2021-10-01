@@ -1,4 +1,4 @@
-package me.rochblondiaux.borringpackets.commons.model.packet;
+package me.rochblondiaux.borringpackets.commons.model;
 
 import me.rochblondiaux.borringpackets.commons.utils.binary.BinaryReader;
 import me.rochblondiaux.borringpackets.commons.utils.binary.Readable;
@@ -8,7 +8,7 @@ import me.rochblondiaux.borringpackets.commons.utils.binary.Writeable;
  * @author Roch Blondiaux
  * www.roch-blondiaux.com
  */
-public interface LazyPacket extends Readable, Writeable {
+public interface BorringPacket extends Readable, Writeable {
 
     @Override
     default void read(BinaryReader reader) {

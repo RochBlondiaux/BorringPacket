@@ -1,4 +1,4 @@
-package me.rochblondiaux.borringpackets.commons.model.packet;
+package me.rochblondiaux.borringpackets.commons.model;
 
 import com.sun.tools.jdi.Packet;
 
