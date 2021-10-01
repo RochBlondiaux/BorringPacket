@@ -7,6 +7,8 @@ import me.rochblondiaux.borringpackets.commons.model.packets.PacketTransporter;
 import me.rochblondiaux.borringpackets.commons.netty.codecs.PacketCompressor;
 import me.rochblondiaux.borringpackets.commons.netty.packets.FramedPacket;
 
+import java.net.SocketAddress;
+
 /**
  * @author Roch Blondiaux
  * www.roch-blondiaux.com
@@ -32,7 +34,7 @@ public interface BorringConnection<T extends BorringPacket> extends PacketTransp
      *
      * @return compression state.
      */
-    boolean isCompressionEnable();
+    boolean isCompressionEnabled();
 
     /**
      * Writes a packet to the connection channel.
@@ -45,36 +47,37 @@ public interface BorringConnection<T extends BorringPacket> extends PacketTransp
     void sendPacket(@NonNull T packet);
 
     /**
-     * Write {@link T}, {@link FramedPacket}
-     * or {@link ByteBuf} to tick buffer.
-     *
-     * @param message object to write.
-     */
-    void write(@NonNull Object message);
-
-    /**
      * Write and flush {@link T}, {@link FramedPacket}
      * or {@link ByteBuf} to tick buffer then to the netty channel.
-     * <p>
-     * {@link #writeWaitingPackets()}
      *
      * @param message object to write and flush.
      */
     void writeAndFlush(@NonNull Object message);
 
-    /**
-     * Write waiting packets to tick buffer then to the netty channel.
-     */
-    void writeWaitingPackets();
-
-    /**
-     * Flush waiting packets to network
-     * {@link #writeWaitingPackets()}
-     */
-    void flush();
 
     /**
      * Disconnect object from network.
      */
     void disconnect();
+
+    /**
+     * Get {@link BorringObject}
+     *
+     * @return linked object.
+     */
+    BorringObject<T> getBorringObject();
+
+    /**
+     * Set linked {@link BorringObject}
+     *
+     * @param borringObject linked object.
+     */
+    void setBorringObject(@NonNull BorringObject<T> borringObject);
+
+    /**
+     * Get remote address.
+     *
+     * @return {@link SocketAddress}
+     */
+    SocketAddress getRemoteAddress();
 }

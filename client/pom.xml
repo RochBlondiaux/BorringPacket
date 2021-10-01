@@ -57,4 +57,13 @@
             </resource>
         </resources>
     </build>
+
+    <dependencies>
+        <!-- Commons -->
+        <dependency>
+            <groupId>me.rochblondiaux.borringpackets</groupId>
+            <artifactId>commons</artifactId>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>

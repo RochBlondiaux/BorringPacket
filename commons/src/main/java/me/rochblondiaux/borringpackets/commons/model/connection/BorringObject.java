@@ -11,13 +11,6 @@ import java.util.UUID;
 public interface BorringObject<T extends BorringPacket> {
 
     /**
-     * Get object identifier.
-     *
-     * @return {@link UUID}
-     */
-    UUID getIdentifier();
-
-    /**
      * Initialize {@link BorringConnection}.
      */
     void initializeConnection();
