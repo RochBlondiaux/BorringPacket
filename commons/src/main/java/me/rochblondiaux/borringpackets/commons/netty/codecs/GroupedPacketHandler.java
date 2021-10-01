@@ -1,4 +1,4 @@
-package me.rochblondiaux.borringpackets.commons.netty.codec;
+package me.rochblondiaux.borringpackets.commons.netty.codecs;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

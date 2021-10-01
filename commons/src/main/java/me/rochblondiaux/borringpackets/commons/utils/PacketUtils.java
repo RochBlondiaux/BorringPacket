@@ -1,7 +1,7 @@
 package me.rochblondiaux.borringpackets.commons.utils;
 
 import io.netty.buffer.ByteBuf;
-import me.rochblondiaux.borringpackets.commons.model.BorringPacket;
+import me.rochblondiaux.borringpackets.commons.model.packets.BorringPacket;
 import me.rochblondiaux.borringpackets.commons.netty.packets.InboundPacket;
 import me.rochblondiaux.borringpackets.commons.utils.binary.BinaryWriter;
 

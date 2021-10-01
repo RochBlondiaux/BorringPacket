@@ -1,4 +1,4 @@
-package me.rochblondiaux.borringpackets.commons.model;
+package me.rochblondiaux.borringpackets.commons.model.packets;
 
 import me.rochblondiaux.borringpackets.commons.utils.binary.BinaryReader;
 import me.rochblondiaux.borringpackets.commons.utils.binary.Readable;

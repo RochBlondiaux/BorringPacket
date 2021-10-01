@@ -1,4 +1,4 @@
-package me.rochblondiaux.borringpackets.commons.model;
+package me.rochblondiaux.borringpackets.commons.model.packets;
 
 /**
  * @author Roch Blondiaux

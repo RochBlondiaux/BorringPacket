@@ -1,9 +1,9 @@
-package me.rochblondiaux.borringpackets.commons.netty.codec;
+package me.rochblondiaux.borringpackets.commons.netty.codecs;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import me.rochblondiaux.borringpackets.commons.model.BorringPacket;
+import me.rochblondiaux.borringpackets.commons.model.packets.BorringPacket;
 import me.rochblondiaux.borringpackets.commons.utils.PacketUtils;
 
 /**
